@@ -102,7 +102,4 @@ for i in emp_dict:
     print("Manager Name:", (first_name), (last_name), 'Current Salary:', (old_salary))
     print('------------------------------------------------')
     print("Manager Name:", (first_name), (last_name), 'New Salary:', (new_salary))
-        
-
-        
-    
+    print()
