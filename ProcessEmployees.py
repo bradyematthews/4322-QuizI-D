@@ -54,9 +54,9 @@ for i in reader:
         emp_list.append(old_salary)
         print("Manager Name:", (first_name), (last_name), 'Salary:', (old_salary))
         emp_dict[i] = emp_list
-        new_salary = old_salary * 1.1
+#        new_salary = old_salary * 1.1
 
-        print("Manager Name:", (first_name), (last_name), 'Salary:', (new_salary))
+ #       print("Manager Name:", (first_name), (last_name), 'Current Salary:', (new_salary))
         emp_dict[i] = emp_list
 
 
@@ -70,10 +70,38 @@ print('=========================================')
 print()
 
 #iternate through the dictionary and print out the key and value as per printout
+for i in reader:
+    if i[3] == 'Marketing':
+        emp_list = []
+
+        i = 0
+        first_name = row[1]
+        last_name = row[2]
+        dept = row[3]
+        old_salary = row[5]
+        i += 1
+        reader = []
+
+        emp_list.append(first_name)
+        emp_list.append(last_name)
+        emp_list.append(old_salary)
+        print("Manager Name:", (first_name), (last_name), 'Salary:', (old_salary))
+        emp_dict[i] = emp_list
+        new_salary = old_salary * 1.1
+
+        print("Manager Name:", (first_name), (last_name), 'New Salary:', (new_salary))
+        emp_dict[i] = emp_list
+
+
+print(emp_dict)
 
 
 
-          
+# Final Product (I don't know how to do this section)
+for i in emp_dict:
+    print("Manager Name:", (first_name), (last_name), 'Current Salary:', (old_salary))
+    print('------------------------------------------------')
+    print("Manager Name:", (first_name), (last_name), 'New Salary:', (new_salary))
         
 
         
